@@ -94,7 +94,7 @@ app.get('/notes', async (req, res) => {
   } catch (err) {
     res.status(500).send('Error reading notes');
   }
-}); 
+});
 
 app.get('/UploadForm.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'UploadForm.html'));
